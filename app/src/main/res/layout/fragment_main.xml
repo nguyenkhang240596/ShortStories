@@ -1,0 +1,129 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.pixa.fragment.MainFragment">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".MainActivity">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/boardMain"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtToolbarTitle"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text=""
+                android:textAppearance="?android:textAppearanceLarge" />
+            <ImageButton
+                android:id="@+id/btnReload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/reload"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/search_background"
+                android:layout_height="@dimen/height_search_bar">
+
+                <ImageButton
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:id="@+id/imgSearch" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_search_bar"
+                    android:id="@+id/txtSearch"
+                    android:layout_toRightOf="@+id/imgSearch"
+                    android:hint="@string/txt_find_story"
+                    android:textColorHint="#e18888"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/txtTabUnselectedColor" />
+
+            </RelativeLayout>
+
+            <TabHost
+                android:id="@+id/tabHostContainer"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:divider="@color/txtTabUnselectedColor"
+                        android:layout_height="wrap_content"></TabWidget>
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/tabShowAll"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <include layout="@layout/all_stories_layout"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tabShowFavorite"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <include layout="@layout/favorite_stories_layout"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tabShowLanguage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <include layout="@layout/laguages_layout"/>
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+            </TabHost>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

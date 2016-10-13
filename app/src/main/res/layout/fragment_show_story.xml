@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/boardMain"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtToolbarTitle"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textAppearance="?android:textAppearanceLarge" />
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_gravity="left" />
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/imgShare"-->
+            <!--android:src="@android:drawable/ic_menu_share"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:layout_gravity="right"/>-->
+
+        <ImageButton
+            android:id="@+id/imgLike"
+            android:layout_width="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/like"
+            android:layout_marginRight="6dp"
+            android:layout_gravity="right" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </android.support.v4.view.ViewPager>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNextPage"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/next_page"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp" />
+    </FrameLayout>
+
+
+</LinearLayout>

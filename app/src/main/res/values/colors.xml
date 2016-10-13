@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blurBlue">#0090ff</color>
+    <color name="darkBlue">#0674f1</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="grey">#545454</color>
+    
+    <color name="txtTabUnselectedColor">#f06e6e</color>
+    <color name="textTitleColor">#c15c44</color>
+    <color name="textAuthorColor">#b77960</color>
+
+    <color name="boardMain">#ffd060</color>
+    <color name="lineListview">#be7859</color>
+
+
+</resources>

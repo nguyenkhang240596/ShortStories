@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">short stories</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_tab_story">STORIE</string>
+    <string name="txt_tab_vocabulary">VOCABULARY</string>
+    <string name="txt_hint_search">Search...</string>
+    <string name="txt_tab_show_all_stories">All</string>
+    <string name="txt_tab_audio_stories">Audio</string>
+    <string name="txt_tab_favorite_stories">Favorite</string>
+    <string name="txt_tab_show_language">Lang</string>
+
+    <string name="txt_error_connection">Please check your connection !</string>
+
+    <string name="facebook_app_id">467683090106415</string>
+    <string name="gcm_defaultSenderId">13526391795</string>
+
+    <string-array name="languages">
+        <item>vietnam</item>
+        <item>english</item>
+        <item>france</item>
+        <item>china</item>
+        <item>germany</item>
+        <item>japan</item>
+        <item>spain</item>
+        <item>thailand</item>
+        <item>korea</item>
+    </string-array>
+
+    <!--Google Cloud Messaging-->
+    <string name="gcm_send_message">Token retrieved and sent to server! You can now use gcmsender to
+        send downstream messages to this app.</string>
+    <string name="registering_message">Generating InstanceID token...</string>
+    <string name="token_error_message">An error occurred while either fetching the InstanceID token,
+        sending the fetched token to the server or subscribing to the PubSub topic. Please try
+        running the sample again.</string>
+    <string name="txt_end_of_stories">It is the last story in list.</string>
+    <string name="txt_find_story">Text to find story . . .</string>
+    <string name="notification_content">Today is Sunday , let relax with us !</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-9903823114359366/4813169533</string>
+    <string name="reload_message">Set Language : All \nReloading Stories ...</string>
+
+</resources>

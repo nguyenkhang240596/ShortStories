@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--hiệu ứng kéo hết listview-->
+        <item name="colorPrimary">#cc434c</item>
+        <item name="colorPrimaryDark">#f06e6e</item>
+        <item name="colorAccent">#cc434c</item>
+
+    </style>
+
+</resources>
